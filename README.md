@@ -10,7 +10,7 @@ Dins de VS Code, a la columna de l'esquerra, has d'estructurar els fitxers dins 
 Ves a src/wp-content/themes/.
 Crea una carpeta nova anomenada asv_examen.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 
 PAS 2: PREPARACIÓ DE L'ENTORN (VS CODE I DOCKER) 
 
@@ -23,7 +23,7 @@ docker-compose up -d
 
 Obre el navegador a localhost:8000. Clica a ¡Vamos a ello! i omple els paràmetres de connexió del teu servidor local. Després crea el teu usuari d'administrador de l'examen. 
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 
 PAS 3: CONFIGURACIÓ DE FITXERS AL VS CODE
 A la ruta src/wp-content/themes/, crea una carpeta anomenada asv_examen i copia-hi dins les teves carpetes d'estils (css) i imatges (img) de l'HTML original. Ara posa exactament aquest codi net a cadascun dels 5 fitxers obligatoris: 
@@ -100,7 +100,7 @@ Copia des de on comença el teu <footer> fins al final del fitxer HTML original 
 </body>
 </html>
 
-4. Fitxer index.php (La teva Home Principal)
+4. Fitxer index.php (La teva Home Principal amb el loop 5 entrades)
 Ajunta les peces bàsiques i enganxa el contingut central del teu index:
 
 **<?php get_header(); ?>
@@ -138,7 +138,7 @@ get_header(); ?>
 
 <?php get_footer(); ?>
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 
 PAS 4: EL PAS A PAS CRONOLÒGIC DIRECTE DENTRE WORDPRESS 
 
@@ -162,7 +162,27 @@ Pas 2: Activar el mode d'Enllaços Simple
   Baixa al final de la pàgina i clica a Guardar cambios.
 
 
-Pas 3: Donar d'alta la pàgina de Portfolio
+Pas 3: Creació de les 5 entrades del Blog
+
+Al menú lateral, fes clic a Entradas ➔ Añadir nueva entrada.
+
+Escriu el títol (Ex: Entrada 1) i una mica de text, i clica a Publicar.
+
+Repeteix el procés fins a tenir un total de 5 entrades creades.
+
+
+Pas 4: Forçar el límit de les 5 entrades al Loop
+
+Al menú lateral esquerre, ves a Ajustes ➔ Lectura.
+
+Cerca l'apartat Número máximo de entradas a mostrar en el sitio.
+
+Esborra el número que hi hagi i posa-hi un 5.
+
+Clica a Guardar cambios. (Això farà que el Loop d'index.php només pinti les 5 últimes de cop).
+
+
+Pas 5: Donar d'alta la pàgina de Portfolio
 
   Al menú lateral, clica a Páginas ➔ Añadir nueva.
 
@@ -173,7 +193,7 @@ Pas 3: Donar d'alta la pàgina de Portfolio
   Clica al botó blau de dalt a la dreta que diu Publicar.
 
 
-Pas 4: Donar d'alta la pàgina de Contacto
+Pas 6: Donar d'alta la pàgina de Contacto
 
   Torna al menú lateral esquerre i clica a Páginas ➔ Añadir nueva.
 
@@ -194,7 +214,7 @@ Pas 5: Bloquejar l'error de Lectura (El pas clau de l'examen)
 
 Clica al botó blau de baix de tot: Guardar cambios.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 
 PAS 5: Exportació de base de dades SQL desde Mariadb
 
