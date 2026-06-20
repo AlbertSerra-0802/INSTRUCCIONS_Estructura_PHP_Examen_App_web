@@ -10,7 +10,7 @@ Dins de VS Code, a la columna de l'esquerra, has d'estructurar els fitxers dins 
 Ves a src/wp-content/themes/.
 Crea una carpeta nova anomenada asv_examen.
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 PAS 2: PREPARACIÓ DE L'ENTORN (VS CODE I DOCKER) 
 
@@ -23,8 +23,7 @@ docker-compose up -d
 
 Obre el navegador a localhost:8000. Clica a ¡Vamos a ello! i omple els paràmetres de connexió del teu servidor local. Després crea el teu usuari d'administrador de l'examen. 
 
-
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 PAS 3: CONFIGURACIÓ DE FITXERS AL VS CODE
 A la ruta src/wp-content/themes/, crea una carpeta anomenada asv_examen i copia-hi dins les teves carpetes d'estils (css) i imatges (img) de l'HTML original. Ara posa exactament aquest codi net a cadascun dels 5 fitxers obligatoris: 
@@ -49,7 +48,6 @@ function asv_examen_scripts_bootstrap() {
 
 add_action('wp_enqueue_scripts', 'asv_examen_scripts_bootstrap');
 
------------------------------------------------------------------------------------------------------
 
 2. Fitxer header.php
 Ves al teu index.html original i copia des de la primera línia (<!DOCTYPE html>) fins a on s'acaba el menú (</header>). Enganxa-ho aquí eliminant els enllaços antics de CSS i afegint les claus i el Menú Simple per IDs fixes:
@@ -88,7 +86,6 @@ Ves al teu index.html original i copia des de la primera línia (<!DOCTYPE html>
   </div>
   </nav>
 </header>
--------------------------------------------------------------------------------------------------
 
 3. Fitxer footer.php
 Copia des de on comença el teu <footer> fins al final del fitxer HTML original i enganxa-ho afegint la clau obligatòria de tancament de WordPress:
@@ -102,7 +99,6 @@ Copia des de on comença el teu <footer> fins al final del fitxer HTML original 
 <?php wp_footer(); ?> 
 </body>
 </html>
--------------------------------------------------------------------------------------------------
 
 4. Fitxer index.php (La teva Home Principal)
 Ajunta les peces bàsiques i enganxa el contingut central del teu index:
@@ -120,7 +116,6 @@ Ajunta les peces bàsiques i enganxa el contingut central del teu index:
 </main>
 <?php get_footer(); ?>
 
--------------------------------------------------------------------------------------------------
 
 5. Nou fitxer page-portfolio.php (La Plantilla de Portafoli dedicada)
 Crea aquest fitxer nou a dins de la carpeta del teu tema per guardar el teu portafoli de 6 caixes:
@@ -132,7 +127,6 @@ get_header(); ?>
 
 <?php get_footer(); ?>
 
--------------------------------------------------------------------------------------------------
 
 6. Nou fitxer page-contacto.php (La Plantilla de Contacte dedicada)
 Crea aquest fitxer nou a dins de la carpeta del teu tema per guardar el formulari de contacte fosc:
@@ -144,7 +138,7 @@ get_header(); ?>
 
 <?php get_footer(); ?>
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 PAS 4: EL PAS A PAS CRONOLÒGIC DIRECTE DENTRE WORDPRESS 
@@ -157,7 +151,6 @@ Pas 1: Activar el Tema
 
   Busca el quadre del teu tema (asv_examen) i clica al botó blau Personalizar.
 
-----------------------------------------------------------------------------------------------------
 
 Pas 2: Activar el mode d'Enllaços Simple
 
@@ -169,7 +162,6 @@ Pas 2: Activar el mode d'Enllaços Simple
 
   Baixa al final de la pàgina i clica a Guardar cambios.
 
-----------------------------------------------------------------------------------------------------
 
 Pas 3: Donar d'alta la pàgina de Portfolio
 
@@ -181,7 +173,6 @@ Pas 3: Donar d'alta la pàgina de Portfolio
 
   Clica al botó blau de dalt a la dreta que diu Publicar.
 
-----------------------------------------------------------------------------------------------------
 
 Pas 4: Donar d'alta la pàgina de Contacto
 
@@ -191,7 +182,6 @@ Pas 4: Donar d'alta la pàgina de Contacto
 
   Obre el desplegable (on posa Plantilla por defecto) i selecciona: Contacto.
 
-----------------------------------------------------------------------------------------------------
 
 Pas 5: Bloquejar l'error de Lectura (El pas clau de l'examen)
 
@@ -205,26 +195,13 @@ Pas 5: Bloquejar l'error de Lectura (El pas clau de l'examen)
 
 Clica al botó blau de baix de tot: Guardar cambios.
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 PAS 8: Exportació de base de dades SQL desde Mariadb
 
 1. Mira a la columna de l'esquerra de tot (sota el logotip de phpMyAdmin). Fes clic directament sobre la paraula que diu wordpress (que és la base de dades on s'ha guardat tot el teu llistat d'entrades de l'examen).
 
-
-
-
-
-
-
-
-
 2. Clicar al menú superior gris d'icones a la pestanya Exportar.
-
-
-
-
-
-
-
 
 3. Clicar al menú superior gris d'icones a la pestanya Exportar.
 
