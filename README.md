@@ -140,7 +140,6 @@ get_header(); ?>
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
 PAS 4: EL PAS A PAS CRONOLÒGIC DIRECTE DENTRE WORDPRESS 
 
 Escrivim (localhost:8000/wp-admin):
@@ -189,7 +188,7 @@ Pas 5: Bloquejar l'error de Lectura (El pas clau de l'examen)
 
   A dalt de tot, a l'opció Tu página de inicio muestra, selecciona la casella: Una página estática.
 
-  Al desplegable de Página de inicio, tria la pàgina que vulguis utilitzar com a principal (per        exemple, "Inicio" o "Página de ejemplo").
+  Al desplegable de Página de inicio, tria la pàgina que vulguis utilitzar com a principal (per exemple, "Inicio" o "Página de ejemplo").
 
 ⚠️ NOTA DE CONTROL: Al desplegable de Página de entradas, obre'l i posa'l a la línia en blanc de dalt de tot que diu - Seleccionar -. Deixa-ho totalment buit per evitar que WordPress trenqui la teva plantilla.
 
@@ -197,7 +196,7 @@ Clica al botó blau de baix de tot: Guardar cambios.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-PAS 8: Exportació de base de dades SQL desde Mariadb
+PAS 5: Exportació de base de dades SQL desde Mariadb
 
 1. Mira a la columna de l'esquerra de tot (sota el logotip de phpMyAdmin). Fes clic directament sobre la paraula que diu wordpress (que és la base de dades on s'ha guardat tot el teu llistat d'entrades de l'examen).
 
