@@ -225,3 +225,13 @@ PAS 5: Exportació de base de dades SQL desde Mariadb
 3. Clicar al menú superior gris d'icones a la pestanya Exportar.
 
 
+Posar imatge devora parragraf
+
+
+
+<p>
+    <img src="tu-imagen.jpg" alt="Descripción" style="float: left; width: 150px; margin-right: 15px;">
+    Este es el texto del párrafo. Como la imagen tiene la propiedad float a la izquierda, el texto se ajustará automáticamente por el lado derecho.
+</p>
+
+
