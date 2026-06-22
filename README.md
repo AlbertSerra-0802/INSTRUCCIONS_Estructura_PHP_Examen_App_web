@@ -227,27 +227,46 @@ PAS 5: Exportació de base de dades SQL desde Mariadb
 
 Posar imatge devora parragraf
 
-<p>
-  <img src="ruta-de-tu-imagen.jpg" alt="Descripción de la imagen" style="float: right; margin-left: 15px; width: 200px;">
-  Este es el texto del párrafo. Al usar la propiedad float right, la imagen se posicionará en el lado derecho de este bloque de texto.
-</p>
+Dreta
+
+<div class="contenedor-flex">
+  <p>Este es el texto del párrafo. Al usar Flexbox, podemos alinear fácilmente el texto y la imagen de forma paralela, controlando el espacio entre ellos sin que el texto se meta debajo de la imagen.</p>
+  <img src="tu-imagen.jpg" alt="Descripción de la imagen" class="imagen-derecha">
+</div>
+ 
+CSS
+
+.contenedor-flex {
+  display: flex;
+  align-items: center; /* Centra verticalmente el texto y la imagen */
+  gap: 20px;           /* Añade espacio entre el texto y la imagen */
+}
+
+.imagen-derecha {
+  max-width: 200px;    /* Ajusta el tamaño a tus necesidades */
+  height: auto;
+}
 
 
-<p>
-    <img src="tu-imagen.jpg" alt="Descripción" style="float: right; margin-right: 15px; width: 200px;">
-    Este texto aparecerá al lado derecho de la imagen. La propiedad float hace que el contenido envuelva a la imagen.
-</p>
+
+Esquerra
+
+<div class="contenedor-flex">
+  <img src="tu-imagen.jpg" alt="Descripción de la imagen" class="imagen-izquierda">
+  <p>Este es el texto del párrafo. Al usar Flexbox, la imagen se mantiene a la izquierda y el texto a la derecha de forma ordenada, sin importar lo largo que sea el párrafo.</p>
+</div>
 
 
-<p>
-    <img src="tu-imagen.jpg" alt="Descripción" style="float: right; width: 150px; margin-right: 15px;">
-    Este es el texto del párrafo. Como la imagen tiene la propiedad float a la izquierda, el texto se ajustará automáticamente por el lado derecho.
-</p> 
+CSS
+.contenedor-flex {
+  display: flex;
+  align-items: center; /* Centra verticalmente la imagen y el texto */
+  gap: 20px;           /* Añade espacio entre la imagen y el texto */
+}
 
-
-<p>
-    <img src="tu-imagen.jpg" alt="Descripción" style="float: left; width: 150px; margin-right: 15px;">
-    Este es el texto del párrafo. Como la imagen tiene la propiedad float a la izquierda, el texto se ajustará automáticamente por el lado derecho.
-</p>
+.imagen-izquierda {
+  max-width: 200px;    /* Ajusta el tamaño que necesites */
+  height: auto;
+}
 
 
