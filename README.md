@@ -227,11 +227,11 @@ PAS 5: Exportació de base de dades SQL desde Mariadb
 
 Posar imatge devora parragraf
 
-
 <p>
-    <img src="tu-imagen.jpg" alt="Descripción" style="float: left; margin-right: 15px; width: 200px;">
-    Este texto aparecerá al lado derecho de la imagen. La propiedad float hace que el contenido envuelva a la imagen.
+  <img src="ruta-de-tu-imagen.jpg" alt="Descripción de la imagen" style="float: right; margin-left: 15px; width: 200px;">
+  Este es el texto del párrafo. Al usar la propiedad float right, la imagen se posicionará en el lado derecho de este bloque de texto.
 </p>
+
 
 <p>
     <img src="tu-imagen.jpg" alt="Descripción" style="float: right; margin-right: 15px; width: 200px;">
